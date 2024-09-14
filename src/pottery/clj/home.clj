@@ -5,7 +5,8 @@
             [aerial.hanami.common :as hc]
             [aerial.hanami.templates :as ht]
             [tablecloth.api :as tc]
-            [clojure.data.csv :as csv]))
+            [clojure.data.csv :as csv]
+            [tech.v3.dataset :as ds]))
 
 ["# Beginning"]
 
@@ -25,6 +26,9 @@
 
 (def apples
   (tc/dataset "resources/assets/apples/apple_quality.csv"))
+
+(def dsApples
+  (ds/->dataset "resources/assets/apples/apple_quality.csv"))
 
 `(-> apples
     tc/select-columns [:Crunchiness :Ripeness :Quality])
@@ -61,12 +65,33 @@
                     (* i j)))})
 ; a map keeps the metadata because it evaluates to itself
 
+(def create-3d-scatter-plot
+  (kind/plotly
+  (let [data dsApples]
+    {:data [{:x (ds/column data "Sweetness")
+             :y (ds/column data "Ripeness")
+             :z (ds/column data "Juiciness")
+             :mode "markers"
+             :type "scatter3d"
+             :marker {:size 5
+                      :color (map #(if (= % "good") 0 1) (ds/column data "Quality"))
+                      :colorscale [[0 "blue"] [1 "red"]]
+                      :colorbar {:title "Quality"}
+                      :showscale true}}]
+     :layout {:title "Apples 3D Scatter Plot"
+              :scene {:xaxis {:title "Sweetness"}
+                      :yaxis {:title "Ripeness"}
+                      :zaxis {:title "Juiciness"}}
+              :width 800
+              :height 600}})))
+
 (kind/hiccup
  [:div
   [:div size-weight]
   [:div crunchiness-juiciness]
   [:div simple-data]
   [:div table]
+  [:div create-3d-scatter-plot]
   [:div ^:kind/dataset (tc/head apples 10)]])
 
 (println (tc/head apples 5))
