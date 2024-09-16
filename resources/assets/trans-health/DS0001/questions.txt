@@ -1,0 +1,654 @@
+STUDYID Study ID
+SURVEY_LGB_TRANS LGB or Transgender survey
+WEIGHT Sample weight
+WEIGHT_LGB Sample weight (LGB)
+WEIGHT_TRANS Sample weight (Trans)
+SURVEYYEAR Year survey was completed
+LGB_SURVEYYEAR Year LGB survey was completed
+TRANS_SURVEYYEAR Year Trans survey was completed
+TRANS_SURVEYDATE Date completed
+LGB_SAMPLE LGB survey sample
+TRANS_SAMPLE TransPop survey completed
+Q01 Please imagine a ladder with steps numbered from zero at the bottom to ten at th
+Q02 On which step do you think you will stand about five years from now?
+Q03 Generally, how would you say things are these days in your life? Would you say t
+Q04 I don't feel I belong to anything I'd call a community.
+Q05 I feel close to other people in my community.
+Q06 My community is a source of comfort.
+Q07 People who do a favor expect nothing in return.
+Q08 People do not care about other people's problems.
+Q09 I believe that people are kind.
+Q10 I have something valuable to give to the world.
+Q11 My daily activities do not produce anything worthwhile for my community.
+Q12 I have nothing important to contribute to society.
+Q13 The world is becoming a better place for everyone.
+Q14 Society has stopped making progress.
+Q15 Society isn't improving for people like me.
+Q16 The world is too complex for me.
+Q17 I cannot make sense of what's going on in the world.
+Q18 I find it easy to predict what will happen next in society.
+Q19A Is the city or area where you live a good place or not a good place to live for.
+Q19B Is the city or area where you live a good place or not a good place to live for.
+Q19C Is the city or area where you live a good place or not a good place to live for.
+Q19D Is the city or area where you live a good place or not a good place to live for.
+Q20_1 Which of the following describes your race/ethnicity? Please select all that app
+Q20_2 Which of the following describes your race/ethnicity? Please select all that app
+Q20_3 Which of the following describes your race/ethnicity? Please select all that app
+Q20_4 Which of the following describes your race/ethnicity? Please select all that app
+Q20_5 Which of the following describes your race/ethnicity? Please select all that app
+Q20_6 Which of the following describes your race/ethnicity? Please select all that app
+Q20_7 Which of the following describes your race/ethnicity? Please select all that app
+Q21 Write-in response for q21
+Q22 I have spent time trying to find out more about my race/ethnic group, such as it
+Q23 I have a strong sense of belonging to my own race/ethnic group.
+Q24 I understand pretty well what my race/ethnic group membership means to me.
+Q25 I have often done things that will help me understand my race/ethnic background
+Q26 I have often talked to other people in order to learn more about my race/ethnic
+Q27 I feel a strong attachment towards my own race/ethnic group.
+Q28 On your original birth certificate, was your sex assigned as female or male?
+Q29 Do you currently describe yourself as a man, woman, or transgender?
+Q30 Are you...?
+Q31 How would you describe your gender identity in your own words?
+Q32 Do you consider yourself to be a cross-dresser?
+Q33 How comfortable are you with the word transgender being used to describe you?
+Q34 Which of the following best describes your current sexual orientation?
+Q34_VERB Write in response for q34
+Q35_1 In the last 5 years, who did you have sex with? By sex we mean any activity you
+Q35_2 In the last 5 years, who did you have sex with? By sex we mean any activity you
+Q35_3 In the last 5 years, who did you have sex with? By sex we mean any activity you
+Q35_4 In the last 5 years, who did you have sex with? By sex we mean any activity you
+Q35_5 In the last 5 years, who did you have sex with? By sex we mean any activity you
+Q36A Please indicate how sexually attracted you are to the following types of people.
+Q36B Please indicate how sexually attracted you are to the following types of people.
+Q36C Please indicate how sexually attracted you are to the following types of people.
+Q36D Please indicate how sexually attracted you are to the following types of people.
+Q36E Please indicate how sexually attracted you are to the following types of people.
+Q36F Please indicate how sexually attracted you are to the following types of people.
+Q37 Are you currently in a relationship or feel a special commitment to someone?
+Q38 For how many years have you been in your relationship with your current partner?
+Q39 What is your current partner's gender?
+Q40 Do you live with your current partner?
+Q41 Which of the following best describes the legal status of your relationship with
+Q42 A person's appearance, style, or dress may affect the way people think of them.
+Q43 A person's mannerisms, such as the way they walk or talk, may affect the way peo
+Q44 People can tell I am transgender even if I don't tell them.
+Q45 I have to repeatedly explain my gender identity to people or correct the pronoun
+Q46 I have difficulty being perceived as my gender.
+Q47 I have to work hard for people to see my gender accurately.
+Q48 I have to be overly masculine or overly feminine in order for people to accept m
+Q49 People don't respect my gender identity because of my appearance or body.
+Q50 People don't understand me because they don't see my gender as I do.
+Q51 I feel a part of a community of people who share my gender identity.
+Q52 I feel connected to other people who share my gender identity.
+Q53 When interacting with members of the community that shares my gender identity, I
+Q54 I'm not like other people who share my gender identity.
+Q55 I feel isolated and separate from other people who share my gender identity.
+Q56 At about what age did you begin to feel that your gender was different from your
+Q57 At about what age did you start to think you were transgender (even if you did n
+Q58 At about what age did you first start to tell others that you were transgender (
+Q59 Did you change your first or middle name in order to reflect your gender identit
+Q60 Thinking about how your name is listed on all of your IDs and records that list
+Q61 Thinking about how your gender is listed on all of your IDs and records that lis
+Q62_T_VERB Write-in response for q62
+Q62A For each of these please answer if have you had it, want it someday, not sure if
+Q62B For each of these please answer if have you had it, want it someday, not sure if
+Q62C For each of these please answer if have you had it, want it someday, not sure if
+Q62D For each of these please answer if have you had it, want it someday, not sure if
+Q62E For each of these please answer if have you had it, want it someday, not sure if
+Q63_T_VERB Write-in response for q63
+Q63A For each of these please answer if have you had it, want it someday, not sure if
+Q63B For each of these please answer if have you had it, want it someday, not sure if
+Q63C For each of these please answer if have you had it, want it someday, not sure if
+Q63D For each of these please answer if have you had it, want it someday, not sure if
+Q63E For each of these please answer if have you had it, want it someday, not sure if
+Q63F For each of these please answer if have you had it, want it someday, not sure if
+Q63G For each of these please answer if have you had it, want it someday, not sure if
+Q63H For each of these please answer if have you had it, want it someday, not sure if
+Q63I For each of these please answer if have you had it, want it someday, not sure if
+Q63J For each of these please answer if have you had it, want it someday, not sure if
+Q64 You indicated you have had at least one procedure for your gender transition. At
+Q65 Have you ever had hormone treatment/HRT treatment?
+Q66 At what age did you begin hormone treatment/HRT treatment?
+Q67 Are you currently taking hormones for your gender identity or gender transition?
+Q68 Where do you currently get your hormones?
+Q69 Have you ever had any counseling/therapy?
+Q70 At what age did you begin counseling/therapy?
+Q71 Have you ever had counseling/therapy to discuss your gender identity or transgen
+Q72 At what age did you begin counseling/therapy to discuss your gender identity or
+Q73_1 From whom did you receive this treatment? Please select all that apply.
+Q73_2 From whom did you receive this treatment? Please select all that apply.
+Q74 Did you ever receive treatment from someone who tried to make you identify only
+Q75 About how old were you the last time you received treatment to keep you from cha
+Q76_1 From whom did you receive treatment? Please select all that apply.
+Q76_2 From whom did you receive treatment? Please select all that apply.
+Q77 Please rate your level of agreement with the following items. When seeking healt
+Q78 Please rate your level of agreement with the following items. When seeking healt
+Q79 Please rate your level of agreement with the following items. When seeking healt
+Q80 Please rate your level of agreement with the following items. When seeking healt
+Q81_1 Are you currently covered by any of the following types of health insurance or h
+Q81_2 Are you currently covered by any of the following types of health insurance or h
+Q81_3 Are you currently covered by any of the following types of health insurance or h
+Q81_4 Are you currently covered by any of the following types of health insurance or h
+Q81_5 Are you currently covered by any of the following types of health insurance or h
+Q81_6 Are you currently covered by any of the following types of health insurance or h
+Q81_7 Are you currently covered by any of the following types of health insurance or h
+Q81_8 Are you currently covered by any of the following types of health insurance or h
+Q81_9 Are you currently covered by any of the following types of health insurance or h
+Q81_10 Are you currently covered by any of the following types of health insurance or h
+Q81_11 Are you currently covered by any of the following types of health insurance or h
+Q81_12 Are you currently covered by any of the following types of health insurance or h
+Q81_13 Are you currently covered by any of the following types of health insurance or h
+Q81_T_VERB Write-in response for q81
+Q82 Is there a place that you usually go to when you are sick or need advice about y
+Q83_1 What kind of place is it? Please select all that apply.
+Q83_2 What kind of place is it? Please select all that apply.
+Q83_3 What kind of place is it? Please select all that apply.
+Q83_4 What kind of place is it? Please select all that apply.
+Q83_5 What kind of place is it? Please select all that apply.
+Q83_T_VERB Write-in response for q83
+Q84 Overall, how satisfied are you with the healthcare you receive at this place?
+Q85 Do you have one person you think of as your personal doctor or healthcare provid
+Q86_VERB Write-in response for q86
+Q86 What type of personal doctor or health provider is this person?
+Q87 Thinking about a doctor or health care provider you go to for your transgender-r
+Q88 Was there a time in the past 12 months when you needed to see a doctor but could
+Q89 In the past 5 years, how often have you been to an LGBT, or transgender-specific
+Q90_1 During the past 12 months, have you looked for information online about certain
+Q90_2 During the past 12 months, have you looked for information online about certain
+Q90_3 During the past 12 months, have you looked for information online about certain
+Q91 In the next year, if it were possible for you to do so, how important would it b
+Q92A Sometimes people go through periods in which they are not interested in sex or a
+Q92B Sometimes people go through periods in which they are not interested in sex or a
+Q92C Sometimes people go through periods in which they are not interested in sex or a
+Q92D Sometimes people go through periods in which they are not interested in sex or a
+Q93 Would you say that in general your health is...
+Q94 Now thinking about your physical health, which includes physical illness and inj
+Q95 Now thinking about your mental health, which includes stress, depression, and pr
+Q96 During the past 30 days, for about how many days did poor physical or mental hea
+Q97_1 Have you EVER been told by a doctor or health professional that you had any of t
+Q97_2 Have you EVER been told by a doctor or health professional that you had any of t
+Q97_3 Have you EVER been told by a doctor or health professional that you had any of t
+Q97_4 Have you EVER been told by a doctor or health professional that you had any of t
+Q97_5 Have you EVER been told by a doctor or health professional that you had any of t
+Q97_6 Have you EVER been told by a doctor or health professional that you had any of t
+Q97_7 Have you EVER been told by a doctor or health professional that you had any of t
+Q97_8 Have you EVER been told by a doctor or health professional that you had any of t
+Q97_9 Have you EVER been told by a doctor or health professional that you had any of t
+Q97_10 Have you EVER been told by a doctor or health professional that you had any of t
+Q97_11 Have you EVER been told by a doctor or health professional that you had any of t
+Q97_12 Have you EVER been told by a doctor or health professional that you had any of t
+Q97_13 Have you EVER been told by a doctor or health professional that you had any of t
+Q97_14 Have you EVER been told by a doctor or health professional that you had any of t
+Q97_15 Have you EVER been told by a doctor or health professional that you had any of t
+Q97_16 Have you EVER been told by a doctor or health professional that you had any of t
+Q97_17 Have you EVER been told by a doctor or health professional that you had any of t
+Q97_18 Have you EVER been told by a doctor or health professional that you had any of t
+Q97_19 Have you EVER been told by a doctor or health professional that you had any of t
+Q97_20 Have you EVER been told by a doctor or health professional that you had any of t
+Q97_21 Have you EVER been told by a doctor or health professional that you had any of t
+Q97_22 Have you EVER been told by a doctor or health professional that you had any of t
+Q97_23 Have you EVER been told by a doctor or health professional that you had any of t
+Q98 Are you limited in any way in any activities because of physical, mental, or emo
+Q99 Do you now have any health problem that requires you to use special equipment, s
+Q100A During the past 30 days, about how often did you feel... Nervous
+Q100B During the past 30 days, about how often did you feel... Hopeless
+Q100C During the past 30 days, about how often did you feel... Restless or fidgety
+Q100D During the past 30 days, about how often did you feel... So depressed that nothi
+Q100E During the past 30 days, about how often did you feel... That everything was an
+Q100F During the past 30 days, about how often did you feel... Worthless
+Q101 In your life, have you ever had any experience that was so frightening, horrible
+Q102 In your life, have you ever had any experience that was so frightening, horrible
+Q103 In your life, have you ever had any experience that was so frightening, horrible
+Q104 In your life, have you ever had any experience that was so frightening, horrible
+Q105 About how often do you get tested for sexually transmitted infections (STIs) oth
+Q106 About how often do you get tested for HIV?
+Q107 How often do you worry that you might get HIV?
+Q108 How likely is it that you will become HIV-positive in your lifetime?
+Q109 Are you currently taking Truvada as PrEP?
+Q110 Truvada is a pill that HIV-negative people can take to prevent HIV infection. T
+Q111 Are you for or against HIV- negative people taking Truvada as PrEP to prevent th
+Q112 How often do you have a drink containing alcohol?
+Q113 How many standard drinks containing alcohol do you have on a typical day?
+Q114 How often do you have six or more drinks on one occasion?
+Q115 Have you smoked at least 100 cigarettes in your entire life? Five packs of cigar
+Q116 Do you now smoke cigarettes every day, some days, or not at all?
+Q117 How often do you use drugs other than alcohol?
+Q118 Do you use more than one type of drug on the same occasion?
+Q119 How many times do you take drugs on a typical day when you use drugs?
+Q120 How often are you influenced heavily by drugs?
+Q121 Over the past year, have you felt that your longing for drugs was so strong that
+Q122 Has it happened, over the past year, that you have not been able to stop taking
+Q123 How often over the past year have you taken drugs and then neglected to do somet
+Q124 How often over the past year have you needed to take a drug the morning after he
+Q125 How often over the past year have you had guilt feelings or a bad conscience bec
+Q126 Have you or anyone else been hurt (mentally or physically) because you used drug
+Q127 Has a relative or a friend, a doctor or a nurse, or anyone else, been worried ab
+Q128 Did you ever in your life have thoughts of killing yourself?
+Q129 About how old were you? Your best estimate is fine.
+Q130 About how old were you the very first time? Your best estimate is fine.
+Q131 About how old were you the most recent time? Your best estimate is fine.
+Q132 Did you ever have any intention to act on thoughts of wishing you were dead or t
+Q133 About how old were you? Your best estimate is fine.
+Q134 About how old were you the very first time? Your best estimate is fine.
+Q135 About how old were you the most recent time? Your best estimate is fine.
+Q136 Did you ever think about how you might kill yourself (e.g., taking pills, shooti
+Q137 About how old were you? Your best estimate is fine.
+Q138 About how old were you the very first time? Your best estimate is fine.
+Q139 About how old were you the most recent time? Your best estimate is fine.
+Q140 Did you ever make a suicide attempt (i.e., purposefully hurt yourself with at le
+Q141 How many different suicide attempts did you ever make?
+Q142 About how old were you? Your best estimate is fine.
+Q143 About how old were you the very first time you made a suicide attempt? Your best
+Q144 About how old were you the last time you made a suicide attempt? Your best estim
+Q145 What were the most serious injuries you ever received from a suicide attempt?
+Q146 Did you ever do something to hurt yourself on purpose, but without wanting to di
+Q147 About how old were you? Your best estimate is fine.
+Q148 About how old were you the very first time you hurt yourself on purpose, but wit
+Q149 About how old were you the most recent time you hurt yourself on purpose, but wi
+Q150A Did you ever in your lifetime go to see any of the professionals on this list fo
+Q150B Did you ever in your lifetime go to see any of the professionals on this list fo
+Q150C Did you ever in your lifetime go to see any of the professionals on this list fo
+Q150D Did you ever in your lifetime go to see any of the professionals on this list fo
+Q150E Did you ever in your lifetime go to see any of the professionals on this list fo
+Q150F Did you ever in your lifetime go to see any of the professionals on this list fo
+Q151 Because I don't want others to know my gender identity/history... I don't talk a
+Q152 Because I don't want others to know my gender identity/history... I modify my wa
+Q153 Because I don't want others to know my gender identity/history... I pay special
+Q154 Because I don't want others to know my gender identity/history... I avoid exposi
+Q155 Because I don't want others to know my gender identity/history... I change the w
+Q156 I resent my transgender identity.
+Q157 Being transgender makes me feel like a freak.
+Q158 Because I am transgender, I feel like an outcast.
+Q159 I ask myself why I can't just be normal?
+Q160 I feel that being transgender is embarrassing.
+Q161 I envy people who are not transgender.
+Q162A Since the age of 18, how often have any of the following happened to you? You we
+Q162B Since the age of 18, how often have any of the following happened to you? You we
+Q162C Since the age of 18, how often have any of the following happened to you? Someon
+Q162D Since the age of 18, how often have any of the following happened to you? Someon
+Q162E Since the age of 18, how often have any of the following happened to you? Someon
+Q162F Since the age of 18, how often have any of the following happened to you? Someon
+Q163_1 If you said you had any of these experiences (being assaulted, robbed, threatene
+Q163_2 If you said you had any of these experiences (being assaulted, robbed, threatene
+Q163_3 If you said you had any of these experiences (being assaulted, robbed, threatene
+Q163_4 If you said you had any of these experiences (being assaulted, robbed, threatene
+Q163_5 If you said you had any of these experiences (being assaulted, robbed, threatene
+Q163_6 If you said you had any of these experiences (being assaulted, robbed, threatene
+Q163_7 If you said you had any of these experiences (being assaulted, robbed, threatene
+Q163_8 If you said you had any of these experiences (being assaulted, robbed, threatene
+Q163_9 If you said you had any of these experiences (being assaulted, robbed, threatene
+Q163_10 If you said you had any of these experiences (being assaulted, robbed, threatene
+Q164 Since the age of 18, how often were you fired from your job or denied a job?
+Q165 Since the age of 18, how often were you denied a promotion or received a negativ
+Q166_1 If you were fired, denied a job or promotion, or received a negative evaluation,
+Q166_2 If you were fired, denied a job or promotion, or received a negative evaluation,
+Q166_3 If you were fired, denied a job or promotion, or received a negative evaluation,
+Q166_4 If you were fired, denied a job or promotion, or received a negative evaluation,
+Q166_5 If you were fired, denied a job or promotion, or received a negative evaluation,
+Q166_6 If you were fired, denied a job or promotion, or received a negative evaluation,
+Q166_7 If you were fired, denied a job or promotion, or received a negative evaluation,
+Q166_8 If you were fired, denied a job or promotion, or received a negative evaluation,
+Q166_9 If you were fired, denied a job or promotion, or received a negative evaluation,
+Q166_10 If you were fired, denied a job or promotion, or received a negative evaluation,
+Q167 Since the age of 18, how often were you prevented from moving into a house or ap
+Q168_1 If you were prevented from moving into or buying a home or apartment by a landlo
+Q168_2 If you were prevented from moving into or buying a home or apartment by a landlo
+Q168_3 If you were prevented from moving into or buying a home or apartment by a landlo
+Q168_4 If you were prevented from moving into or buying a home or apartment by a landlo
+Q168_5 If you were prevented from moving into or buying a home or apartment by a landlo
+Q168_6 If you were prevented from moving into or buying a home or apartment by a landlo
+Q168_7 If you were prevented from moving into or buying a home or apartment by a landlo
+Q168_8 If you were prevented from moving into or buying a home or apartment by a landlo
+Q168_9 If you were prevented from moving into or buying a home or apartment by a landlo
+Q168_10 If you were prevented from moving into or buying a home or apartment by a landlo
+Q169A During the last 12 months... Did you move or have anyone new come to live with y
+Q169B During the last 12 months... Were you fired or laid off from a job?
+Q169C During the last 12 months... Were you unemployed and looking for a job for more
+Q169D During the last 12 months... Have you had trouble with your boss or a coworker?
+Q169E During the last 12 months... Did you change jobs, job responsibilities or work h
+Q169F During the last 12 months... Did you get separated or divorced or break off a st
+Q169G During the last 12 months... Have you had serious problems with a neighbor, frie
+Q169H During the last 12 months... Have you experienced a major financial crisis, decl
+Q169I During the last 12 months... Did you have serious trouble with the police or the
+Q169J During the last 12 months... Was something stolen from you, including things tha
+Q169K During the last 12 months... Has anyone intentionally damaged or destroyed prope
+Q170_1 Would you say these experiences happened because of your . . .
+Q170_2 Would you say these experiences happened because of your . . .
+Q170_3 Would you say these experiences happened because of your . . .
+Q170_4 Would you say these experiences happened because of your . . .
+Q170_5 Would you say these experiences happened because of your . . .
+Q170_6 Would you say these experiences happened because of your . . .
+Q170_7 Would you say these experiences happened because of your . . .
+Q170_8 Would you say these experiences happened because of your . . .
+Q170_9 Would you say these experiences happened because of your . . .
+Q170_10 Would you say these experiences happened because of your . . .
+Q171A In your day-to-day life over the past year, how often did any of the following t
+Q171B In your day-to-day life over the past year, how often did any of the following t
+Q171C In your day-to-day life over the past year, how often did any of the following t
+Q171D In your day-to-day life over the past year, how often did any of the following t
+Q171E In your day-to-day life over the past year, how often did any of the following t
+Q171F In your day-to-day life over the past year, how often did any of the following t
+Q171G In your day-to-day life over the past year, how often did any of the following t
+Q171H In your day-to-day life over the past year, how often did any of the following t
+Q171I In your day-to-day life over the past year, how often did any of the following t
+Q172_1 Would you say these experiences happened because of your . . .
+Q172_2 Would you say these experiences happened because of your . . .
+Q172_3 Would you say these experiences happened because of your . . .
+Q172_4 Would you say these experiences happened because of your . . .
+Q172_5 Would you say these experiences happened because of your . . .
+Q172_6 Would you say these experiences happened because of your . . .
+Q172_7 Would you say these experiences happened because of your . . .
+Q172_8 Would you say these experiences happened because of your . . .
+Q172_9 Would you say these experiences happened because of your . . .
+Q172_10 Would you say these experiences happened because of your . . .
+Q173A Thinking about your life currently, are the statements below true, somewhat true
+Q173B Thinking about your life currently, are the statements below true, somewhat true
+Q173C Thinking about your life currently, are the statements below true, somewhat true
+Q173D Thinking about your life currently, are the statements below true, somewhat true
+Q173E Thinking about your life currently, are the statements below true, somewhat true
+Q173F Thinking about your life currently, are the statements below true, somewhat true
+Q173G Thinking about your life currently, are the statements below true, somewhat true
+Q173H Thinking about your life currently, are the statements below true, somewhat true
+Q173I Thinking about your life currently, are the statements below true, somewhat true
+Q173J Thinking about your life currently, are the statements below true, somewhat true
+Q173K Thinking about your life currently, are the statements below true, somewhat true
+Q173L Thinking about your life currently, are the statements below true, somewhat true
+Q174 As a child, my favorite toys and games were...
+Q175 As a child, the characters on TV or in the movies that I imitated or admired wer
+Q176 In fantasy or pretend play, I took the role...
+Q177 As a child, I felt...
+Q178 Did you live with anyone who was depressed, mentally ill, or suicidal?
+Q179 Did you live with anyone who was a problem drinker or alcoholic?
+Q180 Did you live with anyone who used illegal street drugs or who abused prescriptio
+Q181 Did you live with anyone who served time or was sentenced to serve time in a pri
+Q182 Were your parents separated or divorced?
+Q183 How often did your parents or adults in your home ever slap, hit, kick, punch or
+Q184 Before age 18, how often did a parent or adult in your home ever hit, beat, kick
+Q185 How often did a parent or adult in your home ever swear at you, insult you, or p
+Q186 How often did anyone at least 5 years older than you, or an adult, ever touch yo
+Q187 How often did anyone at least 5 years older than you, or an adult, try to make y
+Q188 How often did anyone at least 5 years older than you, or an adult, force you to
+Q189 How often, if ever, were you bullied before you were 18 years old?
+Q190_1 When you were bullied before you were 18 years old, would you say it was because
+Q190_2 When you were bullied before you were 18 years old, would you say it was because
+Q190_3 When you were bullied before you were 18 years old, would you say it was because
+Q190_4 When you were bullied before you were 18 years old, would you say it was because
+Q190_5 When you were bullied before you were 18 years old, would you say it was because
+Q190_6 When you were bullied before you were 18 years old, would you say it was because
+Q190_7 When you were bullied before you were 18 years old, would you say it was because
+Q190_8 When you were bullied before you were 18 years old, would you say it was because
+Q190_9 When you were bullied before you were 18 years old, would you say it was because
+Q190_10 When you were bullied before you were 18 years old, would you say it was because
+Q191A Please rate your level of agreement with the following items. If I express my
+Q191B Please rate your level of agreement with the following items. If I express my
+Q191C Please rate your level of agreement with the following items. If I express my
+Q191D Please rate your level of agreement with the following items. If I express my
+Q191E Please rate your level of agreement with the following items. If I express my
+Q191F Please rate your level of agreement with the following items. If I express my
+Q191G Please rate your level of agreement with the following items. If I express my
+Q191H Please rate your level of agreement with the following items. If I express my
+Q191I Please rate your level of agreement with the following items. If I express my
+Q192A We are interested in how you feel about each of the following statements. Please
+Q192B We are interested in how you feel about each of the following statements. Please
+Q192C We are interested in how you feel about each of the following statements. Please
+Q192D We are interested in how you feel about each of the following statements. Please
+Q192E We are interested in how you feel about each of the following statements. Please
+Q192F We are interested in how you feel about each of the following statements. Please
+Q192G We are interested in how you feel about each of the following statements. Please
+Q192H We are interested in how you feel about each of the following statements. Please
+Q192I We are interested in how you feel about each of the following statements. Please
+Q192J We are interested in how you feel about each of the following statements. Please
+Q192K We are interested in how you feel about each of the following statements. Please
+Q192L We are interested in how you feel about each of the following statements. Please
+Q193_1 How do you socialize with other transgender people? Please select all that apply
+Q193_2 How do you socialize with other transgender people? Please select all that apply
+Q193_3 How do you socialize with other transgender people? Please select all that apply
+Q193_4 How do you socialize with other transgender people? Please select all that apply
+Q193_5 How do you socialize with other transgender people? Please select all that apply
+Q193_6 How do you socialize with other transgender people? Please select all that apply
+Q193_T_VERB Write-in response for q193
+Q194 How many other transgender people do you socialize with in person?
+Q195 In what year were you born?
+Q196 Were you born in the United States?
+Q197 Did you live in the United States most of the time from age 6 to age 13?
+Q198 What is your citizenship/immigration status in the U.S.?
+Q199 Were one or both of your parents born outside the United States?
+Q200 Do you have any children?
+Q201_1 Which of the following best describe the age of your children and their current
+Q201_2 Which of the following best describe the age of your children and their current
+Q201_3 Which of the following best describe the age of your children and their current
+Q201_4 Which of the following best describe the age of your children and their current
+Q202_1 What is your current employment status? Please select all that apply.
+Q202_2 What is your current employment status? Please select all that apply.
+Q202_3 What is your current employment status? Please select all that apply.
+Q202_4 What is your current employment status? Please select all that apply.
+Q202_5 What is your current employment status? Please select all that apply.
+Q202_6 What is your current employment status? Please select all that apply.
+Q202_7 What is your current employment status? Please select all that apply.
+Q202_8 What is your current employment status? Please select all that apply.
+Q202_9 What is your current employment status? Please select all that apply.
+Q202_10 What is your current employment status? Please select all that apply.
+Q202_VERB Write-in response for q202
+Q203_1 Do you currently receive assistance from food stamps (SNAP) or WIC?
+Q203_2 Do you currently receive assistance from food stamps (SNAP) or WIC?
+Q203_3 Do you currently receive assistance from food stamps (SNAP) or WIC?
+Q204 How much was your total combined household income (before taxes) last year? This
+Q205 Including yourself, how many people (including children) live on that household
+Q205_I Number of people on that household income with imputation
+Q206 How much was your total combined individual income (before taxes) last year? Thi
+Q207 Suppose you cashed in all your checking and savings accounts and any stocks and
+Q208 Do you own or rent your home? Home is defined as the place where you live most o
+Q209_1 Where have you lived in the last 12 months? Please select all that apply.
+Q209_2 Where have you lived in the last 12 months? Please select all that apply.
+Q209_3 Where have you lived in the last 12 months? Please select all that apply.
+Q209_4 Where have you lived in the last 12 months? Please select all that apply.
+Q209_5 Where have you lived in the last 12 months? Please select all that apply.
+Q209_6 Where have you lived in the last 12 months? Please select all that apply.
+Q209_7 Where have you lived in the last 12 months? Please select all that apply.
+Q209_8 Where have you lived in the last 12 months? Please select all that apply.
+Q209_9 Where have you lived in the last 12 months? Please select all that apply.
+Q209_10 Where have you lived in the last 12 months? Please select all that apply.
+Q209_11 Where have you lived in the last 12 months? Please select all that apply.
+Q209_12 Where have you lived in the last 12 months? Please select all that apply.
+Q210 How often have you moved in the past 2 years?
+Q211 What is your present religion, if any?
+Q212 Thinking about when you were a child, in what religion were you raised, if any?
+Q213 Aside from weddings and funerals, about how often do you attend religious servic
+Q214 Have you ever served on active duty in the U.S. Armed Forces, Reserves, or Natio
+Q215 Were you ever discharged or separated from service?
+Q216 Were you ever discharged or separated for homosexual admission or homosexual con
+Q217 Was your discharge or separation from service related to you being transgender?
+Q218 Have you ever been held in jail, prison, or juvenile detention?
+Q219_1 In what type of jail, prison, or juvenile detention were you held? Please select
+Q219_2 In what type of jail, prison, or juvenile detention were you held? Please select
+Q219_3 In what type of jail, prison, or juvenile detention were you held? Please select
+Q219_4 In what type of jail, prison, or juvenile detention were you held? Please select
+Q219_5 In what type of jail, prison, or juvenile detention were you held? Please select
+Q220 Have you ever been held in an immigration detention, such as being held in an Im
+Q221_1 Do you use the Internet or email, at least occasionally? Please select all that
+Q221_2 Do you use the Internet or email, at least occasionally? Please select all that
+Q221_3 Do you use the Internet or email, at least occasionally? Please select all that
+Q222 Is there at least one telephone inside your home that is currently working and i
+Q223 Do you have a cell phone?
+Q224 In most ways, my life is close to my ideal.
+Q225 The conditions of my life are excellent.
+Q226 I am satisfied with life.
+Q227 So far I have gotten the important things I want in life.
+Q228 If I could live my life over, I would change almost nothing.
+T1Q27 What sex were you assigned at birth, on your original birth certificate?
+T1Q28 If you had to choose only one of the following terms, which best describes your
+T1Q198 What is your total annual household income, before taxes? Please include income
+T1Q200 What is your total annual personal income, before taxes? Please include income f
+LGB_Q20_T_VERB American Indian/Alaskan Native write-in
+LGB_Q27 What sex were you assigned at birth, on your original birth certificate?
+LGB_Q28 If you had to choose only one of the following terms, which best describes your
+LGB_Q39_1 Do you identify with any of these labels related to sexual and gender communitie
+LGB_Q39_2 Do you identify with any of these labels related to sexual and gender communitie
+LGB_Q39_3 Do you identify with any of these labels related to sexual and gender communitie
+LGB_Q39_4 Do you identify with any of these labels related to sexual and gender communitie
+LGB_Q39_5 Do you identify with any of these labels related to sexual and gender communitie
+LGB_Q39_6 Do you identify with any of these labels related to sexual and gender communitie
+LGB_Q39_7 Do you identify with any of these labels related to sexual and gender communitie
+LGB_Q39_8 Do you identify with any of these labels related to sexual and gender communitie
+LGB_Q39_9 Do you identify with any of these labels related to sexual and gender communitie
+LGB_Q39_10 Do you identify with any of these labels related to sexual and gender communitie
+LGB_Q39_11 Do you identify with any of these labels related to sexual and gender communitie
+LGB_Q39_12 Do you identify with any of these labels related to sexual and gender communitie
+LGB_Q39_T_VERB Write in response for w1q39
+LGB_Q40 My sexual orientation is an insignificant part of who I am.
+LGB_Q41 My sexual orientation is a central part of my identity.
+LGB_Q42 To understand who I am as a person, you have to know that I'm LGB.
+LGB_Q43 Being an LGB person is a very important aspect of my life.
+LGB_Q44 I believe being LGB is an important part of me.
+LGB_Q45 At what age were you first sexually attracted to someone of the same sex as you?
+LGB_Q46 At what age were you the first time you had sex with someone of the same sex?
+LGB_Q47 At what age did you have your first intimate relationship with someone of the sa
+LGB_Q48 At what age did you first realize that you were LGB?
+LGB_Q49 At what age did you first tell a straight friend that you were LGB?
+LGB_Q50 At what age did you first tell a family member that you were LGB?
+LGB_Q51 How old were you when it was clear to you that someone in your family had found
+LGB_Q52 Now thinking back to when you were in high school, how out were you at school?
+LGB_Q53 You feel you're a part of the LGBT community.
+LGB_Q54 Participating in the LGBT community is a positive thing for you.
+LGB_Q55 You feel a bond with the LGBT community.
+LGB_Q56 You are proud of the LGBT community.
+LGB_Q57 It is important for you to be politically active in the LGBT community.
+LGB_Q58 If we work together, lesbian, gay, bisexual, and transgender people can solve pr
+LGB_Q59 You really feel that any problems faced by the LGBT community are also your own
+LGB_Q123A Are you out to all, most, some, or out to none of your... Family
+LGB_Q123B Are you out to all, most, some, or out to none of your... Straight friends
+LGB_Q123C Are you out to all, most, some, or out to none of your... Co-workers
+LGB_Q123D Are you out to all, most, some, or out to none of your... Healthcare providers
+LGB_Q124 How often, if ever, can people tell you are LGB even if you don't tell them?
+LGB_Q125 Most people where I live think less of a person who is LGB.
+LGB_Q126 Most employers where I live will hire openly LGB people if they are qualified fo
+LGB_Q127 Most people where I live would not want someone who is openly LGB to take care o
+LGB_Q128 I have tried to stop being attracted to people who are the same sex as me.
+LGB_Q129 If someone offered me the chance to be completely heterosexual, I would accept t
+LGB_Q130 I wish I weren't LGB.
+LGB_Q131 I feel that being LGB is a personal shortcoming for me.
+LGB_Q132 I would like to get professional help in order to change my sexual orientation f
+LGB_Q133 Did you ever receive treatment from someone who tried to change your sexual orie
+LGB_Q133_1 Did you ever receive treatment from someone who tried to change your sexual orie
+LGB_Q133_2 Did you ever receive treatment from someone who tried to change your sexual orie
+LGB_Q133_3 Did you ever receive treatment from someone who tried to change your sexual orie
+LGB_Q134 About how old were you the last time you received treatment to change your sexua
+LGB_Q171_4 Which of the following best describes your current employment status? Please sel
+LGB_Q171_5 Which of the following best describes your current employment status? Please sel
+LGB_Q172 What is your total annual household income, before taxes? Please include income
+LGB_Q174 What is your total annual personal income, before taxes? Please include income f
+LGB_Q185 Was your discharge or separation from service related to you being LGB?
+GANN_INC What is your total ANNUAL household income, before taxes? Please include income
+GANN_INC2 Is your total ANNUAL household income before taxes, $48,000 or more, or is it le
+GD74 Do you have a working landline telephone in your home?
+GD75 Do you have a working cell phone that you receive and make calls on?
+GD76 Does anyone in your household have a working cell phone?
+GEDUCATION Education (Official)
+GEMPLOYMENT2010 Employment 2010
+GMSANAME MSA Name
+GRACE Race
+GZIPCODE Zip Code (Official)
+GZIPSTATE State (Offical)
+GD7 Gender
+SEX Sex at birth survey
+TRANS Transgender category
+GMILESAWAY Miles away from nearest LGBT health center
+GMILESAWAY2 60 or more miles from nearest LGBT health center
+GCENDIV Census division
+GCENREG Census region
+RACE Race - survey
+RACE_RECODE Race - survey - recategorized
+RACE_RECODE_CAT5 Race - survey - recategorized - five categories
+SEXUALID Sexual identity
+TRANS_HINC Household income
+TRANS_HINC_I Household income with imputation
+TRANS_PINC Personal income
+TRANS_PINC_I Personal income with imputation
+GEDUC1 Education
+GEDUC2 High school or less
+AGE Age
+GRUCA RUCA2.0
+GRUCA_I RUCA Urbanicity score, missing imputed
+GURBAN Urbanicity
+GURBAN_I Urbanicity with imputation
+POVERTY Census poverty
+POVERTY_I Census poverty with imputation
+POVERTYCAT Poverty-to-income ratio
+POVERTYCAT_I Poverty-to-income ratio with imputation
+SOCIALWB Social wellbeing scale
+SOCIALWB_I Social wellbeing scale with imputations
+MEIM MEIM_R
+MEIM_I MEIM_R with imputation
+KESSLER6 Kessler 6
+KESSLER6_I Kessler 6 with imputation
+AUDITC Audit-C
+AUDITC_I Audit-C with imputation
+DUDIT DUDIT
+DUDIT_I DUDIT with imputation
+EVERYDAY Everyday discrimination
+EVERYDAY_I Everyday discrimination with imputation
+CHILDGNC Childhood gender nonconformity
+CHILDGNC_I Childhood gender nonconformity with imputation
+SOCSUPPORT Social support-full scale
+SOCSUPPORT_I Social support-full scale with imputation
+SOCSUPPORT_SO Social support-significant others
+SOCSUPPORT_SO_I Social support-significant others with imputation
+SOCSUPPORT_FAM Social support-family
+SOCSUPPORT_FAM_I Social support-family with imputation
+SOCSUPPORT_FR Social support-friends
+SOCSUPPORT_FR_I Social support-friends with imputation
+ACE_EMO ACE emotional abuse
+ACE_PHY ACE physical abuse
+ACE_SEX ACE sexual abuse
+ACE_IPV ACE household intimate partner violence
+ACE_SUB ACE household substance abuse
+ACE_MEN ACE household mental illness
+ACE_SEP ACE parental separation or divorce
+ACE_INC ACE incarceration household member
+ACE_EMO_I ACE emotional abuse with imputation
+ACE_PHY_I ACE physical abuse with imputation
+ACE_SEX_I ACE sexual abuse with imputation
+ACE_IPV_I ACE household intimate partner violence with imputation
+ACE_SUB_I ACE household substance abuse with imputation
+ACE_MEN_I ACE household mental illness with imputation
+ACE_SEP_I ACE parental separation or divorce with imputation
+ACE_INC_I ACE incarceration household member with imputation
+ACE Adverse childhood experiences
+ACE_I Adverse childhood experiences with imputation
+LIFESAT Satisfaction with life
+LIFESAT_I Satisfaction with life with imputation
+CONNECTEDNESS Community connectedness
+CONNECTEDNESS_I Community connectedness with imputation
+HCTHREAT Healthcare stereotype threat
+HCTHREAT_I Healthcare stereotype threat with imputation
+INTERNALIZED_TRANSPHOBIA Internalized transphobia
+INTERNALIZED_TRANSPHOBIA_I Internalized transphobia with imputation
+NONDISCLOSURE Gender identity nondisclosure
+NONDISCLOSURE_I Gender identity nondisclosure with imputation
+NONAFFIRM Non-affirmation of gender identity
+NONAFFIRM_I Non-affirmation of gender identity with imputation
+NEGEXPFUTURE Negative expectations of the future based on gender identity/history
+NEGEXPFUTURE_I Negative expectations of the future based on gender identity/history with imputa
+FELTSTIGMA Felt stigma
+FELTSTIGMA_I Felt stigma with imputation
+IDCENTRAL Identity centrality
+IDCENTRAL_I Identity centrality with imputation
+INTERNALIZED_HOMOPHOBIA Internalized homophobia
+INTERNALIZED_HOMOPHOBIA_I Internalized homophobia with imputation
+COHORT Cohort
+LGB_GMETHOD_TYPE Survey completed by mail (scan) or web
+GP1 Party Affiliation
+SCREEN_RACE Race - screener
+LGB_SEXMINID Sexual minority identity
+LGB_PINC Personal income
+LGB_PINC_I Personal income with imputation
+LGB_HINC Household income
+LGB_HINC_I Household income with imputation
+LGB_CONVERSION Did you ever receive treatment from someone who tried to change your sexual orie
+LGB_CONVERSIONHC Conversion therapy from healthcare provider
+LGB_CONVERSIONREL Conversion therapy from religious leader
+TRANS_CONVERSION Did you ever receive treatment from someone who tried to make you identify only
+TRANS_CONVERSIONHC Conversion therapy from healthcare provider
+TRANS_CONVERSIONREL Conversion therapy from religious leader
+GENDER_IDENTITY Gender identity survey
+SEXMINID Sexual minority identity
