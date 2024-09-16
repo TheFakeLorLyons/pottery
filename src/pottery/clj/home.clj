@@ -6,7 +6,8 @@
             [aerial.hanami.templates :as ht]
             [tablecloth.api :as tc]
             [clojure.data.csv :as csv]
-            [tech.v3.dataset :as ds]))
+            [tech.v3.dataset :as ds]
+            [clojure.string :as str]))
 
 ["# Beginning"]
 
@@ -38,8 +39,6 @@
 `(-> apples
     tc/select-columns [:Crunchiness :Ripeness :Quality])
 
-(def color-mapping {"Good" "blue" "Bad" "red"})
-
 (def size-weight
   (kind/vega     ;fn call
    (hc/xform ht/point-chart
@@ -63,6 +62,17 @@
       (tc/order-by [:score])
       (tc/rows :as-maps)))
 
+(defn get-frequencies [column]
+  (let [column-data
+        (-> bulk-trans-data
+        (tc/select-rows #(valid-score? (get % "q01")))
+        (tc/group-by column)
+        (tc/aggregate {"count" tc/row-count})
+        (tc/rename-columns {column "score"})
+        (tc/order-by [:score])
+        (tc/rows :as-maps))] 
+       column-data))
+
 (defn convert-to-individual-maps [data]
   (->> data
        (map (fn [item]
@@ -71,51 +81,43 @@
        (filter (fn [item] (valid-score? (get item "score"))))
        (sort-by #(get % "score"))))
 
-(def separate-items (convert-to-individual-maps q01-frequencies))
+(def q1-text ["Please imagine a ladder with steps numbered from zero at the bottom to ten at the top."
+              "The top of the ladder represents the best possible life for you, and the bottom of the ladder represents the worst possible life for you."
+              "On which step of the ladder would you say you personally feel you stand at this time?"])
+
+(def q01-items (convert-to-individual-maps q01-frequencies))
+
+(def q02-items (convert-to-individual-maps (get-frequencies "q02")))
 
 (def q01-bar-chart-data
   (kind/vega
    (hc/xform
     ht/bar-chart
-    :DATA separate-items
+    :DATA q01-items
     :X "score"
     :XSCALE {:title "Q01 Responses (0-10)"
              :format "d"}
     :Y "count"
     :XTYPE "ordinal"
     :YTITLE "Count"
-    :TITLE "Frequencies of q01 Scores")))
+    :TITLE {:text q1-text
+            :anchor "middle"
+            :frame "group"
+            :align "center"
+            :wrap "enabled"})))
 
-(defn prepare-data [dataset column]
-  (let [valid-range? (fn [x] (and (number? x) (<= 0 x 10)))]
-    (->> dataset
-         (tc/select-columns [column])
-         (tc/rows)
-         (map #(get % column))
-         (filter valid-range?)
-         (frequencies)
-         (map (fn [[k v]] {:q01 k :count v})))))
-
-(def q01-chart
+(def q02-bar-chart-data
   (kind/vega
    (hc/xform
-    {:data (-> bulk-trans-data
-               (tc/select-columns ["q01"])
-               (tc/rows [prepare-data bulk-trans-data :q01]))
-     :mark "bar"
-     :encoding {:x {:field "q01"
-                    :type "quantitative"
-                    :axis {:title "Q01 Responses (0-10)"
-                           :format "d"}
-                    :scale {:domain [0 10]}}
-                :y {:field "count"
-                    :type "quantitative"
-                    :axis {:title "Count"}}
-                :tooltip [{:field "q01" :type "quantitative" :title "Q01 Response"}
-                          {:field "count" :type "quantitative" :title "Count"}]}
-     :width 600
-     :height 400
-     :title "Distribution of Q01 Responses"})))
+    ht/bar-chart
+    :DATA q02-items
+    :X "score"
+    :XSCALE {:title "Q01 Responses (0-10)"
+             :format "d"}
+    :Y "count"
+    :XTYPE "ordinal"
+    :YTITLE "Count"
+    :TITLE "On which step do you think you will stand about five years from now?")))
 
 (def create-3d-scatter-plot
   (kind/plotly
@@ -140,7 +142,13 @@
 (kind/hiccup
  [:div
   [:div size-weight]
-  [:div q01-bar-chart-data]
+  [:div
+   {:style {:display "flex"
+            :flex-direction "column"
+            :justify-content "center"
+            :text-align "center"}}
+   [:div q01-bar-chart-data]
+   [:div q02-bar-chart-data]]
   [:div table]
   [:div create-3d-scatter-plot]
   [:div ^:kind/dataset (tc/head apples 10)]])
