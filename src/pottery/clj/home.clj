@@ -73,6 +73,16 @@
         (tc/rows :as-maps))] 
        column-data))
 
+(def q01-frequencies2
+  (-> bulk-trans-data
+      (tc/select-rows #(= (get % "trans_sample") 1))
+      (tc/select-rows #(valid-score? (get % "q01")))
+      (tc/group-by "q01")
+      (tc/aggregate {"count" tc/row-count})
+      (tc/rename-columns {"q01" "score"})
+      (tc/order-by [:score]) 
+      (tc/rows :as-maps)))
+
 (defn convert-to-individual-maps [data]
   (->> data
        (map (fn [item]
@@ -85,15 +95,34 @@
               "The top of the ladder represents the best possible life for you, and the bottom of the ladder represents the worst possible life for you."
               "On which step of the ladder would you say you personally feel you stand at this time?"])
 
-(def q01-items (convert-to-individual-maps q01-frequencies))
+(def q01a-items (convert-to-individual-maps q01-frequencies))
+(def q01b-items (convert-to-individual-maps q01-frequencies2))
 
 (def q02-items (convert-to-individual-maps (get-frequencies "q02")))
+
+(def layered-q01-bar-chart-data
+  {:layer [{:data {:values q01a-items}
+            :mark {:type "bar", :color "blue"} ;; Base data in blue
+            :encoding
+            {:x {:field "score", :type "ordinal", :axis {:title "Q01 Responses (0-10)"}}
+             :y {:field "count", :type "quantitative", :axis {:title "Count"}}}}
+           {:data {:values q01b-items}
+            :mark {:type "bar", :color "red"}  ;; Overlay data in red
+            :encoding
+            {:x {:field "score", :type "ordinal", :axis {:title "Q01 Responses (0-10)"}}
+             :y {:field "count", :type "quantitative", :axis {:title "Count"}}}}]
+   :width 800
+   :height 600
+   :title {:text q1-text
+           :fontSize 18
+           :align "center"
+           :anchor "middle"}})
 
 (def q01-bar-chart-data
   (kind/vega
    (hc/xform
     ht/bar-chart
-    :DATA q01-items
+    :DATA q01a-items
     :X "score"
     :XSCALE {:title "Q01 Responses (0-10)"
              :format "d"}
@@ -105,6 +134,49 @@
             :frame "group"
             :align "center"
             :wrap "enabled"})))
+
+(def q01-bar-chart-data2
+  (kind/vega
+   (hc/xform
+    ht/bar-chart
+    :DATA q01b-items
+    :X "score"
+    :XSCALE {:title "Q01 Responses (0-10)"
+             :format "d"}
+    :XTYPE "ordinal"
+    :Y "count" 
+    :YTITLE "Count"
+    :TITLE {:text q1-text
+            :anchor "middle"
+            :frame "group"
+            :align "center"
+            :wrap "enabled"})))
+
+(def layered-q01-bar-chart
+  (kind/vega-lite
+   {:data {:values (concat 
+                    (map #(assoc % "group" "LGBT Population") q01a-items)
+                    (map #(assoc % "group" "Trans Sample") q01b-items))}
+    :width 600
+    :height 400
+    :mark {:type "bar"
+           :opacity 0.7}
+    :encoding {:x {:field "score"
+                   :type "ordinal"
+                   :axis {:title "Q01 Responses (0-10)"}
+                   :scale {:format "d"}}
+               :y {:field "count"
+                   :type "quantitative"
+                   :axis {:title "Count"}
+                   :stack nil}
+               :color {:field "group"
+                       :type "nominal"
+                       :scale {:range ["lightblue" "pink"]}}}
+    :title {:text q1-text
+            :fontSize 18
+            :align "center"
+            :anchor "middle"}}))
+
 
 (def q02-bar-chart-data
   (kind/vega
@@ -148,6 +220,8 @@
             :justify-content "center"
             :text-align "center"}}
    [:div q01-bar-chart-data]
+   [:div q01-bar-chart-data2]
+   [:div layered-q01-bar-chart]
    [:div q02-bar-chart-data]]
   [:div table]
   [:div create-3d-scatter-plot]
