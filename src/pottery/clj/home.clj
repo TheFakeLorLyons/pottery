@@ -221,6 +221,93 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(defn generate-graphs-for-column [column-name question-text]
+  (let [lgbt-items (convert-to-individual-maps (get-LGBT-stats column-name))
+        trans-items (convert-to-individual-maps (get-trans-stats column-name))
+
+        lgbt-chart (kind/vega
+                    (hc/xform
+                     ht/bar-chart
+                     :DATA lgbt-items
+                     :X "score"
+                     :XSCALE {:title (str column-name " Responses")
+                              :format "d"}
+                     :Y "count"
+                     :XTYPE "ordinal"
+                     :YTITLE "Count"
+                     :TITLE {:text (str question-text " - LGBT Population")
+                             :anchor "middle"
+                             :frame "group"
+                             :align "center"
+                             :wrap "enabled"}))
+
+        trans-chart (kind/vega
+                     (hc/xform
+                      ht/bar-chart
+                      :DATA trans-items
+                      :X "score"
+                      :XSCALE {:title (str column-name " Responses")
+                               :format "d"}
+                      :XTYPE "ordinal"
+                      :Y "count"
+                      :YTITLE "Count"
+                      :TITLE {:text (str question-text " - Transgender Sample")
+                              :anchor "middle"
+                              :frame "group"
+                              :align "center"
+                              :wrap "enabled"}))
+
+        layered-chart (kind/vega-lite
+                       {:data {:values (concat
+                                        (map #(assoc % "group" "LGBT Population") lgbt-items)
+                                        (map #(assoc % "group" "Trans Sample") trans-items))}
+                        :width 600
+                        :height 400
+                        :mark {:type "bar"
+                               :opacity 0.7}
+                        :encoding {:x {:field "score"
+                                       :type "ordinal"
+                                       :axis {:title (str column-name " Responses")}
+                                       :scale {:format "d"}}
+                                   :y {:field "count"
+                                       :type "quantitative"
+                                       :axis {:title "Count"}
+                                       :stack nil}
+                                   :color {:field "group"
+                                           :type "nominal"
+                                           :scale {:range ["lightblue" "pink"]}}}
+                        :title {:text (str question-text " Compared")
+                                :fontSize 18
+                                :align "center"}})]
+    {:lgbt-chart lgbt-chart
+     :trans-chart trans-chart
+     :layered-chart layered-chart}))
+
+(defn generate-all-graphs [dataset]
+  (let [columns-to-process (filter #(re-matches #"q\d+" %) (ds/column-names dataset))
+        question-texts {"q01" "Please imagine a ladder with steps numbered from zero at the bottom to ten at the top. The top of the ladder represents the best possible life for you, and the bottom of the ladder represents the worst possible life for you. On which step of the ladder would you say you personally feel you stand at this time?"
+                        "q02" "On which step do you think you will stand about five years from now?"
+                        ;; Add more question texts here for other columns
+                        }]
+    (into (sorted-map) (map (fn [column]
+                              [column (generate-graphs-for-column column (get question-texts column column))])
+                            columns-to-process))))
+
+(def all-graphs (generate-all-graphs bulk-trans-data))
+
+(defn display-all-graphs [graphs]
+  [:div
+   (for [[column graphs] graphs]
+     [:div {:key column}
+      [:h3 (str "Graphs for " column)]
+      [:div (:lgbt-chart graphs)]
+      [:div (:trans-chart graphs)]
+      [:div (:layered-chart graphs)]])])
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (kind/hiccup
  [:div {:style {:display "flex"
                 :flex-direction "column"
@@ -244,7 +331,9 @@
      [:div q02a-bar-chart-data]
      [:div q02b-bar-chart-data]
      [:div layered-q02-bar-chart]
-     [:div "Thanks for checking this out. More of my work can be seen on my website - lorelailyons.me"]]]]])
+     [:div "Thanks for checking this out. More of my work can be seen on my website - lorelailyons.me"]]]]
+  [:h2 "All Graphs"]
+  (display-all-graphs all-graphs)])
 
 (comment
   (clay/make! {:format [:html] 
