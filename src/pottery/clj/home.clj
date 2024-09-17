@@ -233,11 +233,11 @@
                      :X "score"
                      :XSCALE {:title (str column-name " Responses")
                               :format "d"}
-                     :Y "count"
                      :XTYPE "ordinal"
+                     :COLOR {:value "lightblue"} 
+                     :Y "count" 
                      :YTITLE "Count"
-                     :TITLE {:text (str question-text " - LGBT Population")
-                             :anchor "middle"
+                     :TITLE {:text (str column-name " - LGBT Population") 
                              :frame "group"
                              :align "center"
                              :wrap "enabled"}))
@@ -250,10 +250,10 @@
                       :XSCALE {:title (str column-name " Responses")
                                :format "d"}
                       :XTYPE "ordinal"
+                      :COLOR {:value "pink"} 
                       :Y "count"
                       :YTITLE "Count"
-                      :TITLE {:text (str question-text " - Transgender Sample")
-                              :anchor "middle"
+                      :TITLE {:text (str column-name " - Transgender Sample") 
                               :frame "group"
                               :align "center"
                               :wrap "enabled"}))
@@ -277,10 +277,10 @@
                                    :color {:field "group"
                                            :type "nominal"
                                            :scale {:range ["lightblue" "pink"]}}}
-                        :title {:text (str question-text " Compared")
-                                :fontSize 18
-                                :align "center"}})]
-    {:lgbt-chart lgbt-chart
+                        :title {:text (str column-name " - Compared")
+                                :fontSize 18}})]
+    {:subheading (str column-name " - " question-text)
+     :lgbt-chart lgbt-chart
      :trans-chart trans-chart
      :layered-chart layered-chart}))
 
@@ -301,8 +301,9 @@
    (for [[column graphs] graphs]
      [:div {:key column}
       [:h3 (str "Graphs for " column)]
-      [:div (:lgbt-chart graphs)]
-      [:div (:trans-chart graphs)]
+      [:h5 (:subheading graphs)]
+      [:div (:lgbt-chart graphs)
+       (:trans-chart graphs)]
       [:div (:layered-chart graphs)]])])
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -315,25 +316,26 @@
                 :text-align "center"
                 :margin-bottom "5vh"
                 :gap "10vh"}}
+  
   [:h2 "Practice Set 1 - Apples"
    [:div size-weight]
    [:div create-3d-scatter-plot]]
 
-  [:h2
-   ["Practice Set 2 - LGB/T Survey Data"
-    [:h5 "Q1: [LGB/T Survey Data] - Stairs"
-     [:div q01a-bar-chart-data]
-     [:div q01b-bar-chart-data]
-     [:div layered-q01-bar-chart]]]
+  [:h2 "Practice Set 2 - LGB/T Survey Data"
+   [:h5 "Q1: [LGB/T Survey Data] - Stairs"
+    [:div q01a-bar-chart-data]
+    [:div q01b-bar-chart-data]
+    [:div layered-q01-bar-chart]]
 
    [:h5 "Q2: 5 Years Stairs"
     [:div
      [:div q02a-bar-chart-data]
      [:div q02b-bar-chart-data]
      [:div layered-q02-bar-chart]
-     [:div "Thanks for checking this out. More of my work can be seen on my website - lorelailyons.me"]]]]
-  [:h2 "All Graphs"]
-  (display-all-graphs all-graphs)])
+     [:div "Thanks for checking this out. More of my work can be seen on my website - lorelailyons.me"]]]
+
+   [:h2 "All Graphs"
+    (display-all-graphs all-graphs)]]])
 
 (comment
   (clay/make! {:format [:html] 
