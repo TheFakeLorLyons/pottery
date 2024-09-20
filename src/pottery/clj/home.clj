@@ -278,27 +278,3 @@
 (comment
   (clay/make! {:format [:html] 
                :source-path "src/pottery/clj/home.clj"}))
-
-(def idk
-  (let [x 5]
-    (transduce
-     (+ 5)
-     (* x)
-     25)))
-
-(def inp (range 0 5))
-
-(defn hellow [x]
-  (->> (+ 10 x)
-       (transduce (filter ( x)
-                          (map * x))
-                          * inp)))
-
-
-(defn hellow2 [x]
-  (->> inp
-       (filter (fn [n] (< n x)))
-       (map #(* % x))
-       (transduce (completing * 1) +)))
-
-(hellow inp)

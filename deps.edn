@@ -24,4 +24,4 @@
                              :jvm-opts ["-Dflowstorm.startRecording=false"
                                         "-Dclojure.storm.instrumentEnable=true"
                                         #_"-Dclojure.storm.instrumentAutoPrefixes=true"
-                                        "-Dclojure.storm.instrumentOnlyPrefixes=LPM."]}}}
+                                        "-Dclojure.storm.instrumentOnlyPrefixes=pottery."]}}}
